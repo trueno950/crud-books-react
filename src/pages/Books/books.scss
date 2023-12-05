@@ -1,0 +1,140 @@
+.books {
+  padding: 25px 50px;
+  background-color: #FAFAFA;
+
+  .books-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+
+    .books-header-items {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .books-content {
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+    .books-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 2em;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .books-action-button {
+      position: absolute;
+      right: 0px;
+    }
+
+    @media (min-width: 768px) {
+      .input-search {
+        width: 30%;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      .input-search {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .books-actions {
+        display: contents;
+      }
+
+      .input-search {
+        width: 100%;
+      }
+
+      #new-book {
+        float: right;
+      }
+    }
+
+    .books-card-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .books-card-item {
+      cursor: default;
+    }
+  }
+
+  .books-content-details {
+    margin-top: 1em;
+
+    .form {
+      display: block;
+
+      .form-name {
+        display: grid;
+        margin-bottom: 1.5em;
+      }
+
+      .form-dates {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 0.5em;
+      }
+
+      .form-dates-new {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+
+      .form-action {
+        margin-top: 2em;
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .books-content-details {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.blog-post {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.blog-post header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.blog-post h2 {
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  line-height: 1.6;
+  padding: 0 20px 20px;
+}
+
+.blog-post footer {
+  background-color: #ecf0f1;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+}
